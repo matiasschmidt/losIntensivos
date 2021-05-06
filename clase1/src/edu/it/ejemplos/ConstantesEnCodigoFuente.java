@@ -1,6 +1,6 @@
 package edu.it.ejemplos;
 
-public class ConstantesEnCodigoFuente {
+public class ConstantesEnCodigoFuente implements Runnable {
     public void run() {
         Long l = 10L;
         Float f = 2.3F;

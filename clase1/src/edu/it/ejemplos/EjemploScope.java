@@ -10,7 +10,7 @@ class Conexion {
     }
 }
 
-public class EjemploScope {
+public class EjemploScope implements Runnable {
     public void run() {
         Conexion c = null;
         Conexion d = null;

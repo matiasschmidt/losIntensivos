@@ -6,6 +6,6 @@ public class Init {
     public static void main(String... params) {
         System.out.println("Bienvenidos a JAVA");
 
-        new ForNoCanonico().run();
+        new IngresoPorConsola().run();
     }
 }

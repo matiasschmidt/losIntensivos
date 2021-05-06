@@ -1,6 +1,6 @@
 package edu.it.ejemplos;
 
-public class TiposDeDatos {
+public class TiposDeDatos implements Runnable {
     public void run() {
         for (byte b = 1; b < 200; b++) {
             System.out.println(b);

@@ -1,6 +1,6 @@
 package edu.it.ejemplos;
 
-public class OperadorCondicional {
+public class OperadorCondicional implements Runnable {
     public void run() {
         Integer x1 = 11;
         Integer z1 = null;

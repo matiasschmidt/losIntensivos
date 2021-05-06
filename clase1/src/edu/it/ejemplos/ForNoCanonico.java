@@ -1,6 +1,6 @@
 package edu.it.ejemplos;
 
-public class ForNoCanonico {
+public class ForNoCanonico implements Runnable {
     public void run() {
         
         for (long l = System.currentTimeMillis() / 100;l < 16202678889L;) {

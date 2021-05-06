@@ -1,6 +1,6 @@
 package edu.it.ejemplos;
 
-public class EstructurasDeControl {
+public class EstructurasDeControl implements Runnable {
     public void run() {
         Integer[] arrayEnteros = new Integer[] {2,4,6};
         

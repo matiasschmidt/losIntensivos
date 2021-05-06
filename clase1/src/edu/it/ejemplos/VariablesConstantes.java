@@ -1,6 +1,6 @@
 package edu.it.ejemplos;
 
-public class VariablesConstantes {
+public class VariablesConstantes implements Runnable {
     public void run() {
         int x = 10;
         x++;
