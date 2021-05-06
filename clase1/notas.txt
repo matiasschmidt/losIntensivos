@@ -1,0 +1,70 @@
+----------------------------------------------------------------------
+Java Standar Web Programing 
+----------------------------------------------------------------------
+
+https://github.com/arteysoft
+https://cmder.net/ Consola de administracion de comandos 
+
+javac --version me tiene que dar 11.0.10
+
+java --version
+java 11.0.10 2021-01-19 LTS
+Java(TM) SE Runtime Environment 18.9 (build 11.0.10+8-LTS-162)
+Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.10+8-LTS-162, mixed mode)
+
+Apache netbeans 11 o el quieran Eclipse, InteliJ o Visual Studio code
+
+Hoy vamos a utilizar ant, pero recordar que no soporta dependencias transitivas
+(dependencias de dependencias)
+
+Lib A -> Lib B.
+
+Hago referencia a la libreria A y me va a tirar un error, NO TENES LA LIBRERIA B.
+
+Luego vamos a usar Maven y Gradle que solucionan ese problema.
+
+como ejecutar un programa en java
+
+java -cp [la ruta donde estan todas las clases compiladas] [edu.it.App]
+
+En nuestro case seria 
+
+java -cp dist\clase1.jar edu.it.Init
+
+// scope o ambito de una variable
+{
+   String s = "hola";
+}
+// Aca, el Garbage collector, limpia el objeto al que apunta la variable s
+{
+   System.out.println(s); 
+}
+
+
+J2EE (Lo vamos a ir viendo a lo largo del curso)
+
+JVM (Java Virtual Machine)
+
+------------------------------------------------------------------------------------
+Ejercicio #1
+------------------------------------------------------------------------------------
+
+Tengo 3 nombres y 3 apellidos, quiero combinarlos 
+para que me den 9 nombres completos.
+
+Niculas
+Cesar
+Joaquin
+
+Valdez
+Lozano
+Gallardo
+
+
+
+
+
+
+
+
+
