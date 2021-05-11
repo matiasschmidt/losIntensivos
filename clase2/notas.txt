@@ -132,11 +132,67 @@ Hacer un metodo que sea la lógica del juego "Piedra Papel Tijera"
 
 class Juego {
    public int jugar(String j1, String j2) {
+      if (j1.equals(j2) {
+         return 0;
+      }
+      if (j1.equals("piedra")) {
+         if (j2.equals("papel")) {
+            return 2;
+         }
+      }
+      if (j1.equals("papel")) {
+      }
+      if (j1.equals("tijera")) {
+      }
+
       // retorna 0 si es empate
       // retorna 1 si gana el j1
       // retorna 2 si gana el j2
    }
 }
+
+Lo que vamos a ver en todas las clases que vienen es el conceptos de funcion pura.
+
+Las funciones puras son las matematicas
+
++ - % Que significa que a mismo input mismo output siempre.
+
+tabla de suma
+
+2 2 -> 4
+3 1 -> 4
+3 3 -> 6
+
+PUEDO NO COMPUTAR (Este es el concepto de funcion pura)
+
+PAPEL PAPEL 0
+PIEDRA PIEDRA 0
+TIJERA TIJERA 0
+PIEDRA PAPEL 2
+PIEDRA TIJERA 1
+PAPEL PIEDRA 1
+PAPEL TIJERA 2
+TIJERA PIEDRA 2
+TIJERA PAPEL 1
+
+Que implica una funcion pura (No se altera por)
+
+Fecha, hora, Input del usuario, servicios web, archivos de configuracion
+NADA DE ESTO ESTA PERMITIDO EN LAS FUNCIONES PURAS.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,6 +1,7 @@
 package edu.it;
 
 import edu.it.ejemplos.*;
+import static edu.it.ejemplos.EjemploStatic.suma;
 
 public class Init {
     public static void main(String... params) {
@@ -13,5 +14,6 @@ public class Init {
         gys.disminuir();
         System.out.println(gys.getCantCambios());
         
+        System.out.println(suma(2,3,4,5,6));       
     }
 }
