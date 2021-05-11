@@ -1,0 +1,145 @@
+----------------------------------------------------------------------
+Encapsulamiento
+----------------------------------------------------------------------
+
+Tengo una imagen de un gato y lo ve un veterinario y lo ve el dueño.
+
+La vista de el veterinario no es la misma que el dueño.
+
+Ahora bien, esta imagen es una metafora teorica.
+En la practica
+
+Gato implements Alimentable, Vacunable, Castrable
+Perro implements Alimentable, Vacunable, Castrable
+Loro implements Alimentable
+
+¿¿ Donde vemos el encapsulamiento ??
+
+vacunarPorOrdenDeLlegada(Vacunable[] vacunables) {
+   for (Vacunable v : vacunables) {
+      v.vacunar();
+   } 
+}
+
+class Persona implements Vacunable {
+   public void vacunar() {
+   }
+}
+
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+
+Facturable
+
+Mesa           Facturable    
+TakeAwait      Facturable
+Delivery       Facturable, Deriverable
+
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+
+Menu que interfaces implementa 
+
+1. Saldo
+2. Movimientos.
+3. Adquirir nuestros productos
+
+class Menu implements  {
+   /*
+   Scanner scn = new Scanner(System.in);
+   scn.nextLine();
+   */
+}
+
+-----------------------------------------------------------
+Clase e instancia
+-----------------------------------------------------------
+
+Si tengo que imprimir 1000000 ejemplares de la reviste gente
+tengo que la clase son las planchas de 
+
+offsethttps://i.pinimg.com/originals/e4/68/7d/e4687d8c039115b8d95cbcb94250c237.png
+
+Los ejemplares son los objetos que se fabricaron con esas planchas.
+
+-----------------------------------------------------------
+package
+-----------------------------------------------------------
+
+El package sirve es para que NO colisionen los identificadores
+
+Identificador Logger
+
+com.apache.log4j.Logger
+com.jbosss.Logger
+com.java.logging.Logger
+
+-----------------------------------------------------------
+La interface
+-----------------------------------------------------------
+
+La interfaz es como un factor comun
+
+Es una vista de un objeto pero restringida
+
+Runnable ve al objeto como algo que se puede ejecutar run()
+MostrableXPantalla ve al objeto como algo que se puede mostrar por pantalla()
+   metodo mostrar();
+
+Dicho, esto: Pueden existir muchos tipos de objetos diferentes pero que tengan
+en comun que todos sean Runnable, MostrableXPantalla.
+
+Para hacer analogias
+
+PuntoAPunto interface 
+Multipunto interface
+
+interface PuntoAPunto {
+   void enviarTexto();
+   String recibirTexto();
+   void enviarAudio();
+   Byte[] recibirAudio();
+}
+
+WhatsApp implements PuntoAPunto {
+   ... 
+}
+
+Telegram implements PuntoAPunto {
+   ...
+}
+
+Discord implements PuntoAPunto {
+   ...
+}
+
+Zoom implements MultiPunto {
+   ...
+}
+
+GoogleMeet implements MultiPunto {
+  ...
+}
+
+
+-----------------------------------------------------------
+Ejercicio
+-----------------------------------------------------------
+
+Hacer un metodo que sea la lógica del juego "Piedra Papel Tijera"
+
+class Juego {
+   public int jugar(String j1, String j2) {
+      // retorna 0 si es empate
+      // retorna 1 si gana el j1
+      // retorna 2 si gana el j2
+   }
+}
+
+
+
+
+
+
