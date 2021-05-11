@@ -1,0 +1,54 @@
+----------------------------------------------------------------------
+Clase #3
+----------------------------------------------------------------------
+
+Encapsulamiento
+   Ocultamiento de estado 
+      Me parece bien, pero cuidado que no tiene que ver solamente
+      con un objeto. puede ser un modulo. un framework.
+    
+      Seperacion entre lo que yo necesito para acceder a la libreria
+      Separecion entre la cosa publica y la cosa privada
+      
+      GUARDA QUE NO ESTA ESTRICAMENTE RELCIONADO CON PUBLIC / PRIVATE
+
+
+Polimorfismo
+   Diferentes conductas o acciones dependiendo del tipo
+   Ejemplo Gato implements Vacunable, Castrable y Alimentable
+
+   Si mi tipo de dato es Vacunable voy a poder vacunar
+   Si mi tipo de dato es Castrable voy a poder castrar
+   Si mi tipo de dato es alimentable voy a poder alimentar
+
+Ejemplo de ambos 2 de arriba es driver de jdbc de mariadb
+
+----------------------------------------------------------------------
+Build tools (maven)
+----------------------------------------------------------------------
+
+Hasta ahora usamos apache ant, esta build tool es rapida pero NO 
+resuelve el problema de las dependencias transitivas.
+
+¿ Que es una dependencia transitiva ?
+
+Es simplemente una dependencia de dependencia.
+
+¿ Poruqe es importante la dependencia transtiva ?
+
+Supongamos que tengo la libreria Contabilidad -> Qr V1 -> log V1
+                                 Ventas -> Qr V2 -> log V1
+                                 Pruebas -> log V1
+
+Log V1 va a estar guardado en disco una sola vez
+
+----------------------------------------------------------------------
+Build tools (gradle)
+----------------------------------------------------------------------
+
+Es simplemente una mejora de maven pero utiliza el mismo esquema.
+
+a) Guarda las dependencias en el mismo lugar
+b) Las va a buscar al mismo lugar
+
+
